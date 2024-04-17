@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Leaflet Step-1</title>
+  <title>Earthquake Visualization</title>
 
   <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -13,7 +13,41 @@
     crossorigin="" />
 
   <!-- Our CSS -->
-  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    #map,
+    body,
+    html {
+      height: 100%;
+    }
+
+    .legend {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      z-index: 1000;
+      background-color: white;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+
+    .legend-item div {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+    }
+  </style>
 </head>
 
 <body>
@@ -28,7 +62,7 @@
   <!-- D3 JavaScript -->
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <!-- Our JavaScript -->
-  <script type="text/javascript" src="static/js/logic.js"></script>
+  <script src="static/js/logic.js"></script>
 </body>
 
 </html>
