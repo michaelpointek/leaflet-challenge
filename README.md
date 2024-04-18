@@ -26,7 +26,10 @@ The earthquake data is sourced from the USGS Earthquake Hazards Program. The dat
 **Technologies Used**
 
 Leaflet: An open-source JavaScript library for interactive maps.
+
 D3.js: A JavaScript library for manipulating documents based on data.
-License
+
+**License**
+
 This project is licensed under the MIT License. See the LICENSE file for details.
 
